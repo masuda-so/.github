@@ -1,0 +1,42 @@
+name: バグ報告 / Bug report
+description: 不具合の報告 / Report a problem
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        脆弱性はここに書かず、Security タブの「Report a vulnerability」から非公開で報告してください。
+        Do not report vulnerabilities here; use "Report a vulnerability" in the Security tab.
+  - type: textarea
+    id: what
+    attributes:
+      label: 発生した問題 / What happened
+      description: 何が起きたか、期待した動作との違いを書いてください。 / Describe what happened and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順 / Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: バージョン / Version
+      description: アプリの設定画面に表示されるバージョンとビルド、または対象のコミット。 / App version and build shown in Settings, or the commit.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 環境 / Environment
+      placeholder: iPhone 17 Pro, iOS 26.1 / macOS 26.1, Safari
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補足 / Additional context
+      description: スクリーンショットやログがあれば添付してください。 / Attach screenshots or logs if available.
