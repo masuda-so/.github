@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: サポート / Support
+    url: https://www.ether-llc.com/
+    about: 使い方の質問やアプリのサポートはこちら。 / Usage questions and app support.
+  - name: 脆弱性の報告 / Report a vulnerability
+    url: https://github.com/masuda-so/.github/security/policy
+    about: 脆弱性は Issue ではなく非公開で報告してください。 / Report security issues privately, not as issues.
